@@ -30,6 +30,14 @@ const quiz=[
     question:"Who created Tom and Jerry?\n1.Universal\n2.Walt Disney\n3.Warner Bros\n4.Hanna and Barbera\n",
     answer:4
   },
+  {
+    question:"What is another name of the Mickey Mouse?\n1.Mortimer Mouse\n2.Melin Mouse \n3.Marty Mouse\n4.Montey Mouse\n",
+    answer:1
+  },
+  {
+    question:"How many nephews does Popeye have?\n1.4\n2.5\n3.6\n4.7\n",
+    answer:1
+  },
 ];
 //  checking of answers
 let score=0;
@@ -53,11 +61,11 @@ function starter(){
   }
 }
 function finished(){
-  if(score===5){
+  if(score===7){
     console.log(chalk.green("You are awsmmm...You got full marks"));
   }
   else{
-    console.log(chalk.green("you got "+score+" marks out of 5"));
+    console.log(chalk.green("you got "+score+" marks out of 7"));
   }
 }
 starter();
